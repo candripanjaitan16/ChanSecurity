@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/logo.png" width="280" alt="ChanSecurity Logo">
+</p>
+
 # ChanSecurity v1
 
 **ChanSecurity** adalah solusi monitoring infrastruktur server proaktif 24/7 yang dirancang untuk menjaga keberlangsungan operasional bisnis digital. Alat ini bekerja di latar belakang untuk mendeteksi anomali performa secara *real-time*, memitigasi ancaman siber sejak dini.
