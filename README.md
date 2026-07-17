@@ -1,6 +1,6 @@
 # ChanSecurity v1
 
-**ChanSecurity** adalah solusi monitoring infrastruktur server proaktif 24/7 yang dirancang untuk menjaga keberlangsungan operasional bisnis digital. Alat ini bekerja di latar belakang untuk mendeteksi anomali performa secara *real-time*, memitigasi ancaman siber sejak dini, dan mengirimkan notifikasi instan langsung ke Gmail Anda ketika sistem mendeteksi adanya masalah.
+**ChanSecurity** adalah solusi monitoring infrastruktur server proaktif 24/7 yang dirancang untuk menjaga keberlangsungan operasional bisnis digital. Alat ini bekerja di latar belakang untuk mendeteksi anomali performa secara *real-time*, memitigasi ancaman siber sejak dini.
 
 ---
 
@@ -11,7 +11,6 @@ Pada versi perdana (v1), ChanSecurity fokus pada tiga fondasi utama kesehatan da
 * **CPU Real-Time Scanning:** Memantau penggunaan prosesor untuk mendeteksi *overload* sistem, aktivitas *malware*, atau indikasi *cryptojacking*.
 * **RAM Leak Detection:** Mendeteksi kebocoran memori (*memory leaks*) pada aplikasi perusahaan dan memantau proses mencurigakan di dalam memori.
 * **Network Anomaly Monitor:** Mengawasi lalu lintas jaringan untuk mendeteksi lonjakan *traffic* tidak wajar (gejala DDoS) atau indikasi pencurian data (*data exfiltration*).
-* **Gmail Alert System:** Sistem peringatan dini otomatis yang mengirimkan email darurat secara instan jika parameter server melewati batas aman (*threshold*).
 * **Hybrid GUI/CLI Ecosystem:** Kontrol penuh via Terminal untuk stabilitas *background service*, dikombinasikan dengan Jendela Dashboard grafis interaktif untuk visualisasi data historis.
 
 ---
@@ -21,7 +20,7 @@ Pada versi perdana (v1), ChanSecurity fokus pada tiga fondasi utama kesehatan da
 Anda dapat memasang ChanSecurity langsung dari repositori GitHub menggunakan `pip`:
 
 ```bash
-pip install git+https://github.com/username/chansecurity.git
+pip install git+https://github.com/candripanjaitan16/chansecurity.git
 ```
 
 ---
