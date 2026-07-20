@@ -6,6 +6,9 @@ dependencies = ["psutil"]
 [project.scripts]
 chansecurity = "chansecurity.cli:main"
 
+[tool.setuptools.package-data]
+chansecurity = ["assets/*"]
+
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"

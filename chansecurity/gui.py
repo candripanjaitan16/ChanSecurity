@@ -4,7 +4,7 @@ from . import state
 class ChanSecurityGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("ChanSecurity V1 - Advanced Dashboard")
+        self.root.title("ChanSecurity V1")
         self.root.geometry("800x600")
         self.root.configure(bg="#121212")
 
