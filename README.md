@@ -103,6 +103,17 @@ Kotak input email di bagian bawah dashboard digunakan untuk mengatur **email tuj
 
 > ⚠️ Kredensial disimpan secara lokal di `~/.chansecurity/config.json` pada perangkat masing-masing pengguna, tidak dikirim ke server mana pun.
 
+### Apakah ini akan dianggap spam oleh Gmail?
+
+Tidak. Beberapa alasannya:
+
+* **Volume jauh di bawah limit Gmail.** Akun Gmail biasa punya batas ±500 email/hari. Skenario terburuk sekalipun (CPU 100% terus-menerus tanpa henti) hanya menghasilkan maksimal ~144 email/hari — jauh di bawah ambang yang bisa memicu pemblokiran.
+* **Notifikasi hanya terkirim saat kondisi benar-benar kritis dan bertahan lama** (minimal 50 detik terus-menerus di atas ambang batas), bukan setiap kali nilai naik sedikit. Lonjakan sesaat tidak memicu apa pun.
+* **App Password** (bukan password akun biasa) yang digunakan untuk autentikasi memang didesain Google untuk pengiriman terprogram semacam ini, sehingga tidak memicu deteksi aktivitas mencurigakan sebagaimana login manual dari perangkat baru.
+* Frekuensi 1x per 10 menit pada kondisi 100% itu **rendah dibanding rate limit** — bukan pola pengiriman massal ke banyak penerima berbeda (yang biasanya memicu klasifikasi spam), melainkan satu pengirim ke satu penerima tetap.
+
+Singkatnya: pola pengiriman ini dirancang untuk **peringatan darurat yang jarang terjadi**, bukan pengiriman berulang tanpa batas — sehingga aman dari perspektif kebijakan Gmail.
+
 ---
 
 ## 📋 Persyaratan Sistem
